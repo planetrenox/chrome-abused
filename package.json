@@ -1,0 +1,39 @@
+{
+  "name": "chrome-abused",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Make Chrome think it's in focus when in reality it's not and you're doing something else.",
+  "bin": {
+    "chrome-abused": "src/cli.js",
+    "chrome-abuse": "src/cli.js",
+    "chrome-abuser": "src/cli.js",
+    "abuse-chrome": "src/cli.js"
+  },
+  "scripts": {
+    "cli": "node ./src/cli.js",
+    "prepublishOnly": "npx shx cp docs/readme.md readme.md",
+    "postpublish": "npx shx rm readme.md"
+  },
+  "files": [
+    "src/cli.js",
+    "docs/DALL·E 2024-03-06 15.45.02.webp"
+  ],
+  "author": "planetrenox",
+  "license": "CC-BY-4.0",
+  "homepage": "https://planetrenox.github.io/chrome-abused",
+  "repository": "git+https://github.com/planetrenox/chrome-abused.git",
+  "funding": "https://bit.ly/incessant-vibration",
+  "keywords": [
+    "chrome",
+    "google chrome",
+    "focus",
+    "background",
+    "foreground"
+  ],
+  "dependencies": {
+    "cute-con": "latest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3"
+  }
+}
